@@ -1,0 +1,183 @@
+@inport url('https://fonts.googleapis.com/css?family=Roboto-Mono');
+@inport url('https://fonts.googleapis.com/css?family=Oswald');
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro{
+	height:100%;
+	width:100%;
+	margin: auto;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+.intro-wrapper{
+	background-color: #040404;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+	display: table-cell;
+}
+
+.intro-content{
+	color: #FAFAFA;
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro-content h1{
+	color: #F9F3F4;
+	font-size: 450%;
+}
+
+@media only screen and (max-width: 600px){
+.intro-content hr{
+	width: 50%;
+}
+}
+
+.btn:hover{
+	color: #888888;
+}
+
+.intro-social-links{
+	font-size:500%;
+}
+
+.about-me{
+	width:100%;
+	display: table;
+	background:#F9F3F4;
+	justify-content:center;
+}
+.about-me-summary{
+	margin-right:10%;
+	margin-left:10%;
+	justify-content:center;
+}
+
+.about-me-summary img{
+  height: 50%;
+  width: 50%;
+  max-width:250px;
+  max-height:250px;
+  border-radius: 100%;
+  display: inline;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me h1{
+	text-align:center;
+	padding: 10px;
+}
+
+.column {
+	float:left;
+  width: 50%;
+  -webkit-column-width:50%;
+  -moz-column-width: 50%;
+  padding: 20px;
+}
+@media only screen and (max-width: 800px){
+.column {
+  width: 100%;
+  -webkit-column-width:100%;
+  -moz-column-width: 100%;
+}
+
+.about-me-summary img{
+  display: block;
+}
+}
+
+.grid-container{
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 1em;
+}
+
+@media only screen and (min-width: 50em){
+	.grid-container{
+		grid-template-columns: repeat(auto-fit,1fr);
+	}
+}
+
+.skill{
+	margin: 0;
+	padding: 10px;
+	position: relative;
+	justify-content: center;
+}
+
+
+.skill svg{
+	width:100%;
+	max-width:150px;
+	display: block;
+	margin:auto;
+}
+
+.skill h3{
+	font-size: 16px;
+}
+
+.skill figcaption{
+	width:100%;
+	max-width:150px;
+	margin:auto;
+	position: absolute;
+	top: 1em;
+	bottom: 1em;
+	right: 1em;
+	left: 1em;
+	background: #444499;
+	color: #AAAAAA;
+	align-items: center;
+	display:block;
+	padding-top: 10%;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity ease-in-out 500ms;
+}
+
+.skill:hover figcaption{
+	opacity: .85;
+}
+
+.skill-name{
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	
+}
+
+
+.stars{
+	text-align: center;
+}
+.checked{
+	color:orange;
+}
+
+
+.experience{
+	width:100%;
+	margin: auto;
+	display: table;
+	background:#F9F3F4;
+	justify-content:center;
+	top: 0;
+}
+
